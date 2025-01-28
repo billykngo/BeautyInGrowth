@@ -1,0 +1,16 @@
+---
+layout: archive
+title: "Files"
+permalink: /files/
+author_profile: true
+---
+
+{% include base_path %}
+<div> 
+    <a href = "../Fall 2024 Resume.pdf"> Resume Link</a>
+</div>
+
+{% for post in site.portfolio %}
+  {% include archive-single.html %}
+{% endfor %}
+
