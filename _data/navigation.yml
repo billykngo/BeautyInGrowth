@@ -9,7 +9,7 @@ main:
     url: /education/
 
   - title: "Courses"
-    url: /course/    
+    url: /courses/    
 
   - title: "Experience"
     url: /work/    

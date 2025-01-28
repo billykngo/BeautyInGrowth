@@ -1,0 +1,21 @@
+---
+layout: archive
+title: "Courses"
+permalink: /courses/
+author_profile: true
+---
+
+{% include base_path %}
+<!-- New style rendering if courses categories are defined -->
+{% if site.courses %}
+{% for post in site.courses %}
+  <!-- <h2>{{ post.title }}</h2> -->
+  <!-- <p>{{ post.excerpt }}</p> -->
+  {% include archive-single.html %}
+{% endfor %}
+{% else %}
+<p>No courses found.</p>
+{% endif %}
+
+
+

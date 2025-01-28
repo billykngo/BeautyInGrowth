@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale: "en-US"
-title: "Billy Ngo / Beauty In Growth"
+title: "Beauty In Growth"
 title_separator: "-"
 name: &name "Beauty in Growth"
 description: &description "personal description"
@@ -37,14 +37,14 @@ author:
   facebook: "billy.ngo.37"
   instagram: iknowingo
   linkedin: bkngo
-  uh.edu: 
+  uh.edu:
 
-# Publication Category - The following the list of publication categories and their headings
-publication_category:
+# Courses Category - The following the list of courses categories and their headings
+courses_category:
   books:
-    title: "Books"
+    title: "Course"
   manuscripts:
-    title: "Journal Articles"
+    title: "Class"
   conferences:
     title: "Conference Papers"
 
@@ -84,12 +84,6 @@ staticman:
 atom_feed:
   hide: false # change to true to hide the RSS feed in the footer
   path: # blank (default) uses feed.xml
-
-# SEO Related
-google_site_verification:
-bing_site_verification:
-alexa_site_verification:
-yandex_site_verification:
 
 # Analytics
 analytics:
@@ -155,18 +149,12 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
+  education:
     output: true
-    permalink: /:collection/:path/
-  publications:
+    permalink: /collection/:title/
+  courses:
     output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
+    permalink: /courses/:title/
 
 # These settings control how pages and collections are included in the site
 defaults:
@@ -188,16 +176,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
-  # _publications
+  # _education
   - scope:
       path: ""
       type: education
@@ -206,23 +185,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 # Sass/SCSS
 sass:
