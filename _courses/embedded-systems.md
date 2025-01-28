@@ -3,7 +3,6 @@ title: "COSC 4331 Real Time Systems and Embedded Programming"
 collection: courses
 category: rtsep
 permalink: /courses/cosc4331-rts-embeddedprogramming
-layout: default
 
 ---
 

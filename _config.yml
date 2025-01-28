@@ -23,11 +23,8 @@ author:
   # Biographic information
   avatar: "profile.png"
   name: "Billy Ngo"
-  pronouns: # example: "she/her"
+  pronouns: "He/Him"
   bio: "I am an aspiring programmer that seeks to learn more about web-dev and my dream goal is to go into cybersecurity."
-  #location: "Earth"
-  #employer: "Red Brick University"
-  #uri: # URL
   email: "billyngo1212@yahoo.com"
 
   # Repositories and software development
@@ -37,7 +34,6 @@ author:
   facebook: "billy.ngo.37"
   instagram: iknowingo
   linkedin: bkngo
-  uh.edu:
 
 # Courses Category - The following the list of courses categories and their headings
 courses_category:
@@ -151,24 +147,13 @@ kramdown:
 collections:
   education:
     output: true
-    permalink: /collection/:title/
+    permalink: /:collection/:title/
   courses:
     output: true
-    permalink: /courses/:title/
+    permalink: /:collection/:title/
 
 # These settings control how pages and collections are included in the site
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   # _pages
   - scope:
       path: ""
@@ -183,7 +168,16 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: true
+      share: false
+      comments: true
+  # _courses
+  - scope:
+      path: ""
+      type: courses
+    values:
+      layout: single
+      author_profile: true
+      share: false
       comments: true
 
 # Sass/SCSS

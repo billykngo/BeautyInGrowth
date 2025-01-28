@@ -3,7 +3,6 @@ title: "COSC 4351 Fundamentals of Software Engineering"
 collection: courses
 category: softwareengineering
 permalink: /courses/cosc4351-Software-Engineering
-layout: single
 
 ---
 
