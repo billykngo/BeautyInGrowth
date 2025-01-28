@@ -1,7 +1,17 @@
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ESDEY4QSX9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ESDEY4QSX9');
+</script>
+
 ---
 layout: archive
 title: "Education"
-permalink: /education/
+permalink: /resume/
 author_profile: true
 ---
 
@@ -11,7 +21,7 @@ author_profile: true
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
-    {% for post in site.education reversed %}
+    {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
@@ -23,7 +33,7 @@ author_profile: true
     {% endfor %}
   {% endfor %}
 {% else %}
-  {% for post in site.education reversed %}
+  {% for post in site.publications reversed %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
