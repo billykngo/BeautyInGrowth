@@ -12,7 +12,10 @@ main:
     url: /courses/    
 
   - title: "Experience"
-    url: /work/    
+    url: /portfolio/    
+
+  - title: "Skills"
+    url: /Skills/
     
   - title: "Resume/CV"
     url: /resume/
