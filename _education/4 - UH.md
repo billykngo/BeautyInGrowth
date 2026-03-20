@@ -1,7 +1,7 @@
 ---
 title: "University of Houston - Main Campus"
 collection: education
-category: computerscience
+category: computer science
 permalink: /education/UHCS
 ---
 

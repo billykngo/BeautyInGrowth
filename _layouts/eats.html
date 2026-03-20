@@ -1,0 +1,16 @@
+---
+layout: single
+---
+
+<div class="eats-entry">
+  <p><strong>Rating:</strong> {{ page.rating }} / 10</p>
+
+  <h3>Notes</h3>
+  {{ content }}
+
+  <p>
+    {% for tag in page.tags %}
+      <a href="/eats/tags/#{{ tag | slugify }}">{{ tag }}</a>
+    {% endfor %}
+  </p>
+</div>

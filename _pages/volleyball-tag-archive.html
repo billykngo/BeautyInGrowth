@@ -1,0 +1,19 @@
+---
+layout: archive
+permalink: /volleyball/tags/
+title: "Volleyball by Tag"
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign tags = site.volleyball | map: "tags" | join: "," | split: "," | uniq | sort %}
+
+{% for tag in tags %}
+  <h2 id="{{ tag | slugify }}">{{ tag }}</h2><hr />
+  {% for post in site.volleyball reversed %}
+    {% if post.tags contains tag %}
+      {% include archive-single.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

@@ -8,12 +8,12 @@
 
 # Basic Site Settings
 locale: "en-US"
-title: "Beauty In Growth"
+title: "Growing Pains"
 title_separator: "-"
-name: &name "Beauty in Growth"
+name: &name "Growing Pains"
 description: &description "personal description"
 url: "https://billykngo.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-baseurl: "/BeautyInGrowth" # the subpath of your site, e.g. "/blog"
+baseurl: "/billykngos" # the subpath of your site, e.g. "/blog"
 repository: "billykngo"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -148,7 +148,13 @@ collections:
   education:
     output: true
     permalink: /:collection/:title/
-  courses:
+  eats:
+    output: true
+    permalink: /:collection/:title/
+  volleyball:
+    output: true
+    permalink: /:collection/:title/
+  cyber:
     output: true
     permalink: /:collection/:title/
 
@@ -160,6 +166,7 @@ defaults:
       type: pages
     values:
       layout: single
+      share: true
       author_profile: true
   # _education
   - scope:
@@ -168,12 +175,30 @@ defaults:
     values:
       layout: single
       author_profile: true
-      share: false
+      share: true
       comments: true
-  # _courses
+  # _eats
   - scope:
       path: ""
-      type: courses
+      type: eats
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _volleyball
+  - scope:
+      path: ""
+      type: volleyball
+    values:
+      layout: single
+      author_profile: true
+      share: false
+      comments: true
+  # cyber
+  - scope:
+      path: ""
+      type: cyber
     values:
       layout: single
       author_profile: true

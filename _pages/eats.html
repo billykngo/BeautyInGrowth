@@ -1,0 +1,12 @@
+---
+layout: archive
+permalink: /eats/
+title: "Eats"
+author_profile: true
+---
+
+{% include base_path %}
+
+{% for post in site.eats reversed %}
+  {% include archive-single.html %}
+{% endfor %}

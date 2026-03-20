@@ -1,7 +1,7 @@
 ---
 title: "University of Texas at Austin"
 collection: education
-category: socialwork
+category: social work
 permalink: /education/UTAustin
 ---
 

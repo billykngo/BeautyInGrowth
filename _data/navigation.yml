@@ -8,15 +8,18 @@ main:
   - title: "Education"
     url: /education/
 
-  - title: "Courses"
-    url: /courses/    
+  - title: "Eats"
+    url: /eats/    
 
-  - title: "Portfolio"
-    url: /portfolio/    
+  - title: "Volleyball"
+    url: /volleyball/    
 
-  - title: "Skills"
-    url: /Skills/
+#  - title: "Skills"
+#    url: /Skills/
     
-  - title: "Resume/CV"
-    url: /resume/
+ # - title: "Resume/CV"
+  #  url: /resume/
+
+  - title: "Cybersecurity"
+    url: /cyber/
     

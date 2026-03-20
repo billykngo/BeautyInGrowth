@@ -1,0 +1,19 @@
+---
+layout: archive
+permalink: /eats/tags/
+title: "Eats by Tag"
+author_profile: true
+---
+
+{% include base_path %}
+
+{% assign tags = site.eats | map: "tags" | join: "," | split: "," | uniq | sort %}
+
+{% for tag in tags %}
+  <h2 id="{{ tag | slugify }}">{{ tag }}</h2><hr />
+  {% for post in site.eats reversed %}
+    {% if post.tags contains tag %}
+      {% include archive-single.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
